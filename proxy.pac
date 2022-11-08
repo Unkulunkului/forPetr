@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host) {
-  if (shExpMatch(host, "*")) {
-    return "PROXY localhost:4200";
+  if (shExpMatch(host, "*.local")) {
+    return "PROXY localhost";
   }
   return "DIRECT";
 }
