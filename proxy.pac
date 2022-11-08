@@ -1,9 +1,9 @@
 function FindProxyForURL(url, host) {
   if (shExpMatch(host, "*.targpatrol.local")) {
-    return "PROXY 0.0.0.0:8080";
+    return "PROXY google.com";
   }
-  if (shExpMatch(host, "targpatrol.local")) {
-    return "PROXY 0.0.0.0:8080";
+  if (shExpMatch(host, "*.local*")) {
+    return "google.com";
   }
   return "DIRECT";
 }
