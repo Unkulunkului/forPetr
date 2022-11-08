@@ -1,3 +1,3 @@
 function FindProxyForURL(url, host) {
-  return "PROXY localhost:4200";
+  return "PROXY https://targpatrol.local:4200";
 }
