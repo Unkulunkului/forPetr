@@ -1,4 +1,6 @@
 function FindProxyForURL(url, host) {
-    HTTPS = "HTTPS targpatrol.local"
-    return HTTPS
+  if (shExpMatch(host, "*.dev")) {
+    return "PROXY localhost:4200";
+  }
+  return "DIRECT";
 }
