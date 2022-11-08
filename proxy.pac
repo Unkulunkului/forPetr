@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-    HTTPS = "HTTPS targpatrol.local:4200"
+    HTTPS = "HTTPS targpatrol.local"
 
     if (shExpMatch(host,"*.targpatrol.local")) {
         return HTTPS;
