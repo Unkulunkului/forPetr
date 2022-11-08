@@ -1,48 +1,48 @@
 function FindProxyForURL(url, host) {
   if (shExpMatch(host, "*.dev:4200")) {
-    return "PROXY localhost";
+    return "PROXY 192.168.100.1";
   }
   if (shExpMatch(host, "*dev:4200*")) {
-    return "PROXY localhost";
+    return "PROXY 192.168.100.1";
   }
   if (shExpMatch(host, "*.dev")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*.dev:4200")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*dev:4200*")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*.dev")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*dev*")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*dev")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*.dev")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*dev*")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*dev")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*.dev")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*dev*")) {
-    return "PROXY localhost:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*dev")) {
-    return "PROXY targpatrol.dev:4200";
+    return "PROXY 192.168.100.1:4200";
   }
   if (shExpMatch(host, "*dev")) {
-    return "HTTPS targpatrol.dev:4200";
+    return "HTTPS 192.168.100.1:4200";
   }
   return "DIRECT";
 }
