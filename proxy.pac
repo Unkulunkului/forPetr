@@ -1,3 +1,9 @@
 function FindProxyForURL(url, host) {
-  return "PROXY https://targpatrol.local:4200";
+  if (shExpMatch(host, "*.targpatrol.local")) {
+    return "PROXY localhost:4200";
+  }
+  if (shExpMatch(host, "targpatrol.local")) {
+    return "PROXY localhost:4200";
+  }
+  return "DIRECT";
 }
