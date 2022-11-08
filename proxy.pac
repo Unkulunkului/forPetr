@@ -1,3 +1,8 @@
 function FindProxyForURL(url, host) {
-  return "PROXY 192.168.100.5";
+    HTTPS = "HTTPS targpatrol.local:4200"
+
+    if (shExpMatch(host,"*.targpatrol.local")) {
+        return HTTPS;
+    }
+    return "DIRECT";
 }
