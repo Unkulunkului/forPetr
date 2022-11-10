@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host) {
   if (shExpMatch(host, "*.targpatrol.local")) {
-    return "PROXY 1.2.3.4";
+    return "PROXY 127.0.0.1";
   }
   return "DIRECT";
 }
