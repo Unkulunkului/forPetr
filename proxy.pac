@@ -1,3 +1,3 @@
 function FindProxyForURL(url, host) {
-   return "PROXY targpatrol.dev:80";
+   return "HTTPS targpatrol.dev:443";
 }
