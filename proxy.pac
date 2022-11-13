@@ -1,3 +1,6 @@
 function FindProxyForURL(url, host) {
-   return "HTTP 127.0.0.1:80";
+   if (shExpMatch(host, "*.targpatrol.local")) { 
+      return "PROXY localhost:8000";
+   }
+   return "DIRECT";
 }
