@@ -3,5 +3,6 @@ function FindProxyForURL(url, host) {
       console.log("1111");
       return "PROXY targpatrol.local:443";
    }
+   console.log("22222");
    return "DIRECT";
 }
